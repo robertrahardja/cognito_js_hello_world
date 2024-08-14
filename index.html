@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cognito Integration Demo</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        padding: 20px;
+      }
+      h1,
+      h2 {
+        color: #333;
+      }
+      input,
+      button {
+        margin: 5px 0;
+        padding: 5px;
+      }
+      button {
+        cursor: pointer;
+        background-color: #007bff;
+        color: white;
+        border: none;
+        padding: 10px 15px;
+      }
+      button:hover {
+        background-color: #0056b3;
+      }
+      #message {
+        margin-top: 20px;
+        padding: 10px;
+        background-color: #f8f9fa;
+        border: 1px solid #dee2e6;
+      }
+      .section {
+        margin-bottom: 20px;
+        border: 1px solid #dee2e6;
+        padding: 15px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Cognito Integration Demo</h1>
+
+    <div id="message"></div>
+
+    <div class="section">
+      <h2>Sign Up</h2>
+      <input id="signupUsername" placeholder="Username" />
+      <input id="signupPassword" type="password" placeholder="Password" />
+      <input id="signupEmail" type="email" placeholder="Email" />
+      <button id="signupButton">Sign Up</button>
+    </div>
+
+    <div id="confirmSignupSection" class="section" style="display: none">
+      <h2>Confirm Sign Up</h2>
+      <input id="confirmationCode" placeholder="Confirmation Code" />
+      <button id="confirmSignupButton">Confirm Sign Up</button>
+    </div>
+
+    <div class="section">
+      <h2>Sign In</h2>
+      <input id="signinUsername" placeholder="Username" />
+      <input id="signinPassword" type="password" placeholder="Password" />
+      <button id="signinButton">Sign In</button>
+    </div>
+
+    <div class="section">
+      <h2>Current User</h2>
+      <button id="getCurrentUserButton">Get Current User</button>
+    </div>
+
+    <div class="section">
+      <h2>Sign Out</h2>
+      <button id="signoutButton">Sign Out</button>
+    </div>
+
+    <div class="section">
+      <h2>Forgot Password</h2>
+      <input id="forgotPasswordUsername" placeholder="Username" />
+      <button id="forgotPasswordButton">Reset Password</button>
+    </div>
+
+    <div class="section">
+      <h2>Confirm Password Reset</h2>
+      <input id="resetPasswordUsername" placeholder="Username" />
+      <input id="resetPasswordCode" placeholder="Reset Code" />
+      <input id="newPassword" type="password" placeholder="New Password" />
+      <button id="resetPasswordButton">Confirm Password Reset</button>
+    </div>
+
+    <div class="section">
+      <h2>User Attributes</h2>
+      <button id="getUserAttributesButton">Get User Attributes</button>
+    </div>
+
+    <div class="section">
+      <h2>Update User Attribute</h2>
+      <input id="attributeName" placeholder="Attribute Name" />
+      <input id="attributeValue" placeholder="Attribute Value" />
+      <button id="updateUserAttributeButton">Update Attribute</button>
+    </div>
+
+    <script src="dist/bundle.js"></script>
+  </body>
+</html>
